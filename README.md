@@ -20,7 +20,7 @@ pip install --upgrade -r requirements.txt
 ### Models
 You can download our pretrained model checkpoints from the following link:
 
-👉 [Download from Google Drive](https://pan.baidu.com/s/1KyN10jbUeEkN9KXnan9geQ?pwd=yjcu)
+👉 [Download from Baidu](https://pan.baidu.com/s/1KyN10jbUeEkN9KXnan9geQ?pwd=yjcu)
 
 ## Quick Start
 ```python
