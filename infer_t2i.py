@@ -1,32 +1,9 @@
-# StrategyAdapter
-StrategyAdapter: One-Shot Learning for Unseen-Domain Procedural Sequence Generation
-
-![show](./assets/show.png)
-
-## Configuration
-### Environment setup
-git clone https://github.com/LUYserena/StrategyAdapter.git
-cd StrategyAdapter
-conda create -n strategyadapter python=3.11.10
-conda activate strategyadapter
-
-### Requirements installation
-```
-pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124
-pip install --upgrade -r requirements.txt
-```
-
-## Download
-### Models
-You can download our pretrained model checkpoints from the following link:
-
-👉 [Download from Google Drive](https://your-google-drive-link.com)
-
-## Quick Start
-```python
+import os
 from PIL import Image
 
 import torch
+import torch.nn as nn
+from transformers import AutoProcessor, SiglipVisionModel
 
 from src.pipeline_flux_ipa import FluxPipeline
 from src.transformer_flux import FluxTransformer2DModel
@@ -62,5 +39,3 @@ images = ip_model.generate(
 )
 
 images[0].save(f"results/{image_name}")
-
-```
